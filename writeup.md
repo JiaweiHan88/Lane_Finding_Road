@@ -72,6 +72,8 @@ better results.
 Instead of using the slope, we could also extrapolate the line to the bottom and using the x value to decide whether it belongs
 to the left or right lane (left = 0- width/2), and we can use a range of x values to filter out non lane lines.
 In this project, the slope approach is used.
+Using all points for the left or right lane, we use polyfit to fit a line and poly1d to create a line equation for calculating the coordinates at
+image bottom and close to the horizon, we use the example video to see that the horizon is around 0,6 * imageheight
 
 ![alt text][image6]
 
